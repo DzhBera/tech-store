@@ -1,3 +1,5 @@
+import {ReactComponent as Logo} from '../../assets/logo.svg';
+import {ReactComponent as SearchIcon} from '../../assets/search.svg';
 function Header () {
     return (
         <header>
@@ -12,14 +14,16 @@ function Header () {
                         <div className="header-top__phone">
                         Call Us: <a href="" className="tel:0012345678">(00) 1234 5678</a>
                         </div>
-                        <a href="https://www.facebook.com/"><img src="" alt="" /></a>
-                        <a href="https://www.instagram.com/"><img src="" alt="" /></a>
+                        <a href="https://www.facebook.com/"><img src="" alt="F" /></a>
+                        <a href="https://www.instagram.com/"><img src="" alt="I" /></a>
                         </div>
                         
                 </div>
             </div>
             
                 <div className="container header-main">
+                 
+                   <Logo/> 
                <nav className="links">
                    <a href="#">Laptops</a>
                    <a href="#">Desktop PCs</a>
@@ -29,20 +33,22 @@ function Header () {
                    <a href="#">Repairs</a>
                    <a href="#">Our Deals</a>
                </nav>
-               <div className="actions"></div>
+               <div className="actions">
                <button className="btn" > 
-               <img src="" alt="" /></button>
+               <SearchIcon/>  </button>
 
                <button className="btn" > 
                <img src="" alt="" /></button>
 
                <button className="avatar" > 
                <img src="" alt="" /></button>
-
+               </div>
 
                 </div>
         
         </header>
     )
 }
+
+
 export default Header; 
